@@ -1,0 +1,24 @@
+// Typography
+$font: 'briller', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+$font-bold: 'journal-ultra', $font;
+$font-size: 24px;
+$line-height: 1.5;
+
+// Spacing
+$gap: 6rem;
+
+// Grid
+$col-nr: 3;
+
+// Colors
+$c-title: hsl(0, 0%, 90%);
+$c-text: hsl(0, 0%, 60%);
+$c-bg: hsl(182, 34%, 6%);
+$c-main: hsla(137, 76%, 36%, 1.00);
+
+// RWD Breakpoints
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 1199px;
+$breakpoint-mobile: 860px;
+$breakpoint-small: 480px;
