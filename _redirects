@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://suspicious-swirles-b8b59d.netlify.com/* https://brutalist.one/:splat 301!
