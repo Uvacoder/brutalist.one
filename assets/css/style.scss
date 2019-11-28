@@ -89,15 +89,15 @@ h1, h2, h3, h4 {
 }
 
 h1  {
-    font-size: calc(1.6rem + 4vw);
-
-    span    {
-        font-family: $font-bold;
-        font-size: 1.4em;
-        line-height: 1.3rem;
-        position: relative;
-        display: inline-block;
-    }
+    font-size: calc(1.2rem + 4vw);
+    //
+    //span    {
+    //    font-family: $font-bold;
+    //    font-size: 1.4em;
+    //    line-height: 1.3rem;
+    //    position: relative;
+    //    display: inline-block;
+    //}
 }
 
 .title {
@@ -176,18 +176,6 @@ ol {
 
 .grid-3c    {
     grid-template-columns: repeat(3, auto);
-
-    svg + h2  {
-        background: url(../img/line-p.svg) no-repeat left top;
-        background-size: 100% auto;
-        margin-top: $gap/6;
-        padding-top: $gap/6;
-    }
-
-    h2 + p   {
-        font-size: 0.667rem;
-        margin-bottom: 0;
-    }
 }
 
 .span2 {
@@ -226,6 +214,14 @@ header {
 main {
     position: relative;
     z-index: 6;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    height: 100vh;
+
+    p   {
+        font-size: 0.667rem;
+    }
 }
 
 footer {
