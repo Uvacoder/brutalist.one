@@ -1,13 +1,5 @@
-/*! Version 19.11.29 */
+/*! Version 20.01.20 */
 @import "variables";
-
-//@font-face {
-//    font-family: 'CartographMonoCF';
-//    src: url('/assets/fonts/CartographMonoCF-Regular.woff2') format('woff2');
-//    font-weight: normal;
-//    font-style: normal;
-//
-//}
 
 html {
     font-size: $font-size;
@@ -89,21 +81,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     border-right: 3px solid hsl(0, 0%, 100%);
     white-space: nowrap;
     overflow: hidden;
     color: hsl(0, 0%, 100%);
     margin: 0 auto;
     animation: animated-text 2s steps(29, end) 1s 1 normal both,
-    animated-cursor 600ms steps(29, end) infinite;
+    animated-cursor 900ms steps(29, end) infinite;
 
     @keyframes animated-text {
         from {
             width: 0;
         }
         to {
-            width: 900px;
+            width: 380px;
         }
     }
 
