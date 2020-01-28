@@ -1,21 +1,22 @@
 // Typography
-$font: 'zeitung-mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, 'Roboto', 'Oxygen',
+$font: 'ff-nexus-typewriter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, 'Roboto', 'Oxygen',
 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 $font-bold: 'journal-ultra', $font;
-$font-size: 20px;
+$font-size: 18px;
 $line-height: 1.5;
 
 // Spacing
-$gap: 6rem;
+$gap: 4rem;
 
 // Grid
 $col-nr: 3;
 
 // Colors
 $c-title: hsl(0, 0%, 90%);
-$c-text: hsl(0, 0%, 60%);
-$c-bg: hsl(204, 12%, 13%);
-$c-main: hsl(21, 16%, 88%);
+$c-text: hsl(175, 7%, 19%);
+$c-bg: hsl(175, 7%, 51%);
+//$c-bg: hsl(167, 16%, 17%);
+$c-main: hsl(175, 7%, 91%);
 
 // RWD Breakpoints
 $breakpoint-desktop: 1200px;
