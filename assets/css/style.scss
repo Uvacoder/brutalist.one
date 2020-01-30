@@ -190,7 +190,7 @@ section {
 
 .glitch {
     $steps: 50;
-    animation: glitch 7s infinite steps($steps);
+    animation: glitch 9s infinite steps($steps);
     display: inline-block;
 
     @keyframes glitch {
