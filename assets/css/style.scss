@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: serif;
+    font-family: $font;
     color: $c-text;
     font-size: 1rem;
     line-height: $line-height;
@@ -23,7 +23,7 @@ body {
 *::after {
     box-sizing: border-box;
     font-weight: 400;
-    font-family: 'Adobe Caslon Pro', serif;
+    font-family: $font;
 }
 
 #Page {
@@ -291,7 +291,6 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0;
-        font-family: serif;
     }
 
     a {
