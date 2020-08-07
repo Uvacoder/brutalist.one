@@ -1,4 +1,4 @@
-/*! Version 20.01.20 */
+/*! Version 20.08.07 */
 @import "variables";
 
 html {
@@ -16,6 +16,8 @@ body {
     min-height: 100vh;
     background: $c-bg;
     font-feature-settings: "tnum";
+    font-weight: 400;
+    letter-spacing: -0.02em;
 }
 
 *,
@@ -72,13 +74,14 @@ h1, h2, h3, h4 {
         &::before    {
             content: 'Featured';
             text-transform: uppercase;
-            border: 1px solid $c-text;
-            padding: 1px 4px 0 5px;
+            border: solid $c-sec;
+            border-width: 1px 2px 2px 1px;
+            padding: 1px 4px 1px 5px;
             margin-right: 6px;
-            color: $c-text;
             letter-spacing: 1px;
             font-style: italic;
             font-size: 16px;
+            color: $c-sec;
         }
     }
 }
@@ -188,65 +191,65 @@ section {
     margin: 0 auto $gap;
 }
 
-.glitch {
-    $steps: 50;
-    animation: glitch 10s infinite steps($steps);
-    display: inline-block;
-
-    @keyframes glitch {
-        @for $i from 1 to $steps {
-            $per: 100% / $steps * $i;
-            $style: (
-                    normal,
-                    normal,
-                    italic,
-                    italic,
-                    normal,
-                    normal,
-                    italic,
-                    normal
-            );
-            $decoration: (
-                    none,
-                    none,
-                    overline,
-                    line-through,
-                    underline,
-                    overline
-            );
-            $decoration-color: (
-                    $c-text,
-                    hsla(175, 7%, 11%, 0.2),
-                    $c-main
-            );
-            $transform: (
-                    none,
-                    none,
-                    lowercase,
-                    capitalize,
-                    none,
-                    none,
-                    uppercase,
-                    none,
-                    none,
-                    none
-            );
-
-            $arrayS: random(8);
-            $arrayD: random(6);
-            $arrayDC: random(3);
-            $arrayT: random(10);
-
-            #{$per} {
-                font-style: nth($style, $arrayS);
-                text-decoration: nth($decoration, $arrayD);
-                text-decoration-color: nth($decoration-color, $arrayDC);
-                text-transform: nth($transform, $arrayT);
-                text-decoration-thickness: 2px;
-            }
-        }
-    }
-}
+//.glitch {
+//    $steps: 50;
+//    animation: glitch 10s infinite steps($steps);
+//    display: inline-block;
+//
+//    @keyframes glitch {
+//        @for $i from 1 to $steps {
+//            $per: 100% / $steps * $i;
+//            $style: (
+//                    normal,
+//                    normal,
+//                    italic,
+//                    italic,
+//                    normal,
+//                    normal,
+//                    italic,
+//                    normal
+//            );
+//            $decoration: (
+//                    none,
+//                    none,
+//                    overline,
+//                    line-through,
+//                    underline,
+//                    overline
+//            );
+//            $decoration-color: (
+//                    $c-text,
+//                    hsla(175, 7%, 11%, 0.2),
+//                    $c-main
+//            );
+//            $transform: (
+//                    none,
+//                    none,
+//                    lowercase,
+//                    capitalize,
+//                    none,
+//                    none,
+//                    uppercase,
+//                    none,
+//                    none,
+//                    none
+//            );
+//
+//            $arrayS: random(8);
+//            $arrayD: random(6);
+//            $arrayDC: random(3);
+//            $arrayT: random(10);
+//
+//            #{$per} {
+//                font-style: nth($style, $arrayS);
+//                text-decoration: nth($decoration, $arrayD);
+//                text-decoration-color: nth($decoration-color, $arrayDC);
+//                text-transform: nth($transform, $arrayT);
+//                text-decoration-thickness: 2px;
+//            }
+//        }
+//    }
+//}
 
 header {
     position: relative;
@@ -266,19 +269,16 @@ header {
     }
 
     .hero {
-        font-size: calc(1.4rem + 1.1vw);
-
-        span    {
-            color: $c-text;
-        }
+        font-size: calc(2.6rem + 1vw);
+        font-family: synthemesc, $font;
+        color: $c-sec;
     }
 
     #about {
         margin: $gap/2 0 0;
 
         span {
-            color: $c-main;
-            font-family: serif !important;
+            color: $c-sec;
         }
     }
 }

@@ -1,6 +1,6 @@
 // Typography
-$font: 'adobe-caslon-pro', serif;
-$font-size: 22px;
+$font: 'lft-etica-mono', -apple-system, system-ui, sans-serif;
+$font-size: 20px;
 $line-height: 1.5;
 
 // Spacing
@@ -15,6 +15,7 @@ $c-text: hsl(175, 7%, 6%);
 $c-bg: hsl(175, 7%, 51%);
 //$c-bg: hsl(167, 16%, 17%);
 $c-main: hsl(175, 7%, 91%);
+$c-sec: hsl(21, 100%, 63%);
 
 // RWD Breakpoints
 $breakpoint-desktop: 1200px;
