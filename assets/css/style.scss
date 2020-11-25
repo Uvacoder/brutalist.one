@@ -1,4 +1,4 @@
-/*! Version 20.08.07 */
+/*! Version 20.11.25 */
 @import "variables";
 
 html {
@@ -46,15 +46,6 @@ a {
     text-decoration: none;
     color: $c-main;
     transition: all 0.2s ease-in-out;
-
-    //&.external {
-    //    &::after {
-    //        content: "\2197";
-    //        display: inline-block;
-    //        margin-left: 0.1rem;
-    //        font-size: 0.7em;
-    //    }
-    //}
 }
 
 h1, h2, h3, h4 {
@@ -89,35 +80,6 @@ h1, h2, h3, h4 {
 p {
     margin: 0 0 $gap/2;
 }
-
-//ol {
-//    text-align: left;
-//    counter-reset: a;
-//    padding-left: 1rem;
-//    margin: 1rem 0;
-//
-//    > li {
-//        position: relative;
-//        margin: 0 0 0 1rem;
-//        list-style: none;
-//
-//        &::before {
-//            content: counter(a);
-//            counter-increment: a 1;
-//            position: absolute;
-//            top: 4px;
-//            left: -2rem;
-//            width: 1rem;
-//            text-align: center;
-//            line-height: 1;
-//            font-size: 1rem;
-//        }
-//
-//        h3 {
-//            line-height: 1.1;
-//        }
-//    }
-//}
 
 .auto-columns {
     columns: 180px;
@@ -191,66 +153,6 @@ section {
     margin: 0 auto $gap;
 }
 
-//.glitch {
-//    $steps: 50;
-//    animation: glitch 10s infinite steps($steps);
-//    display: inline-block;
-//
-//    @keyframes glitch {
-//        @for $i from 1 to $steps {
-//            $per: 100% / $steps * $i;
-//            $style: (
-//                    normal,
-//                    normal,
-//                    italic,
-//                    italic,
-//                    normal,
-//                    normal,
-//                    italic,
-//                    normal
-//            );
-//            $decoration: (
-//                    none,
-//                    none,
-//                    overline,
-//                    line-through,
-//                    underline,
-//                    overline
-//            );
-//            $decoration-color: (
-//                    $c-text,
-//                    hsla(175, 7%, 11%, 0.2),
-//                    $c-main
-//            );
-//            $transform: (
-//                    none,
-//                    none,
-//                    lowercase,
-//                    capitalize,
-//                    none,
-//                    none,
-//                    uppercase,
-//                    none,
-//                    none,
-//                    none
-//            );
-//
-//            $arrayS: random(8);
-//            $arrayD: random(6);
-//            $arrayDC: random(3);
-//            $arrayT: random(10);
-//
-//            #{$per} {
-//                font-style: nth($style, $arrayS);
-//                text-decoration: nth($decoration, $arrayD);
-//                text-decoration-color: nth($decoration-color, $arrayDC);
-//                text-transform: nth($transform, $arrayT);
-//                text-decoration-thickness: 2px;
-//            }
-//        }
-//    }
-//}
-
 header {
     position: relative;
     align-items: stretch;
@@ -268,10 +170,8 @@ header {
         width: auto;
     }
 
-    .hero {
-        font-size: calc(2.6rem + 1vw);
-        font-family: synthemesc, $font;
-        color: $c-sec;
+    svg {
+        width: 400px;
     }
 
     #about {
